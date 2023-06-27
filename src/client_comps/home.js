@@ -1,6 +1,7 @@
-import React from 'react'
-import React,{ useState , useEffect }  from 'react'
-import { API_URL, doApiGet } from '../../services/apiService';
+import React from 'react';
+import { useState , useEffect }  from 'react';
+import { doApiGet,API_URL } from '../services/apiService';
+import UserItem from '../comps_admin/users/userItem';
 export default function Home() {
 
   const [ar,setAr] = useState([]);
@@ -26,7 +27,7 @@ export default function Home() {
 
   return (
     <div className='container'>
-      <CheckAdminComp />
+      {/* <CheckAdminComp /> */}
       <h1>List of users in systems</h1>
       <table className='table table-striped table-hover'>
         <thead>

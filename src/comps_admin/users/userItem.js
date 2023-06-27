@@ -31,20 +31,18 @@ export default function UserItem(props) {
   return (
     <tr>
       <td>{props.index + 1}</td>
-      <td>{item.name}</td>
-      <td>{item.email}</td>
-      <td>
-        <button onClick={onRoleClick}>
-          {item.role}
-          </button>
-        </td>
-      <td>{item.rank}</td>
-      <td>{item.location}</td>
+      <td>{item.title}</td>
+      <td>{item.info}</td>
+      {/* <td>
+      {item.answers}
+        </td> */}
+      <td>{item.date_created}</td>
+      {/* <td>{item.location}</td>
       <td>{item.nickname}</td>
       <td>{String(item.active)}</td>
       <td>
         <button className='badge bg-danger'>Del</button>
-      </td>
+      </td> */}
     </tr>
   )
 }
