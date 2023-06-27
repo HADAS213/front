@@ -1,4 +1,3 @@
-// import React from 'react'
 import React,{ useState , useEffect }  from 'react'
 import { API_URL, doApiGet } from '../services/apiService';
 import CheckAdminComp from '../comps_admin/checkAdminComp';
@@ -28,7 +27,7 @@ export default function Home() {
 
   return (
     <div className='container'>
-      <CheckAdminComp />
+      {/* <CheckAdminComp /> */}
       <h1>List of users in systems</h1>
       <table className='table table-striped table-hover'>
         <thead>

@@ -16,12 +16,11 @@ import { ToastContainer } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';
 import React from 'react';
 import { adminRoutes } from './comps_admin/adminRoutes';
-import PersonalArea from './personalArea/personalArea';
 
 function App() {
   return (
     <BrowserRouter>
-      {/*       
+      
       <Routes>
         <Route path="/admin/*" element={<HeaderAdmin />} />
         <Route path="/test/*" element={<HeaderTest />} />
@@ -29,21 +28,19 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="/*" element={<h2>Page 404</h2>}/> */}
+        <Route path="/*" element={<h2>Page 404</h2>}/>
 
-      {/* ADMIN ROUTES */}
-      {/* {adminRoutes()} */}
-
-      {/* TEST ROUTES */}
-      {/* <Route path="/test/upload" element={<UploadTest />} />
+        {/* ADMIN ROUTES */}
+        {adminRoutes()}
+        
+        {/* TEST ROUTES */}
+        <Route path="/test/upload" element={<UploadTest />} />
         <Route path="/test/ownHook" element={<MyHookComp />} />
         <Route path="/test/lazy1" element={<LazyLoading />} />
-        <Route path="/test/lazyApi" element={<LazyApi />} />
+        <Route path="/test/lazyApi" element={<LazyApi />} />  */}
 
-     
       </Routes>
-      <ToastContainer position="top-left" theme="colored" /> */}
-      <PersonalArea name={user.name} email={user.email} phone={user.phone} password={user.password} birth_date={user.birth_date} info={user.info} img_url={user.img_url} />
+      <ToastContainer position="top-left" theme="colored" />
     </BrowserRouter>
   );
 }
