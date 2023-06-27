@@ -1,6 +1,8 @@
-import React from 'react'
+// import React from 'react'
 import React,{ useState , useEffect }  from 'react'
-import { API_URL, doApiGet } from '../../services/apiService';
+import { API_URL, doApiGet } from '../services/apiService';
+import CheckAdminComp from '../comps_admin/checkAdminComp';
+import UserItem from '../comps_admin/users/userItem';
 export default function Home() {
 
   const [ar,setAr] = useState([]);
