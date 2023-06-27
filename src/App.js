@@ -37,7 +37,7 @@ function App() {
         <Route path="/test/upload" element={<UploadTest />} />
         <Route path="/test/ownHook" element={<MyHookComp />} />
         <Route path="/test/lazy1" element={<LazyLoading />} />
-        <Route path="/test/lazyApi" element={<LazyApi />} />  */}
+        <Route path="/test/lazyApi" element={<LazyApi />} />  
 
       </Routes>
       <ToastContainer position="top-left" theme="colored" />
